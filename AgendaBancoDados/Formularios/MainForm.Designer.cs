@@ -88,6 +88,7 @@
             this.listBoxPessoas.Name = "listBoxPessoas";
             this.listBoxPessoas.Size = new System.Drawing.Size(241, 134);
             this.listBoxPessoas.TabIndex = 2;
+            this.listBoxPessoas.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBoxPessoas_MouseDoubleClick);
             // 
             // listBoxEmpresas
             // 
@@ -96,6 +97,7 @@
             this.listBoxEmpresas.Name = "listBoxEmpresas";
             this.listBoxEmpresas.Size = new System.Drawing.Size(241, 134);
             this.listBoxEmpresas.TabIndex = 4;
+            this.listBoxEmpresas.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBoxEmpresas_MouseDoubleClick);
             // 
             // label2
             // 

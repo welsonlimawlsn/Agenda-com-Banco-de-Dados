@@ -11,7 +11,7 @@ namespace AgendaBancoDados.Class.Util
     /// <summary>
     /// Classe para cuidar de conexões com o banco de dados.
     /// </summary>
-    public class SQL
+    public class SQL : IDisposable
     {
         SqlConnection Connection { get; set; }
         public SQL()
@@ -74,6 +74,12 @@ namespace AgendaBancoDados.Class.Util
         {
             if(this.Connection != null)
                 this.Connection.Close();
+        }
+
+        public void Dispose()
+        {
+            if (this.Connection != null)
+                this.Connection.Dispose();
         }
     }
 }

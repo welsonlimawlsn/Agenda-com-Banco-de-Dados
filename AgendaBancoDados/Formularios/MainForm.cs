@@ -39,5 +39,23 @@ namespace AgendaBancoDados.Formularios
             listBoxEmpresas.Items.AddRange(Contato.GetTodosContatos<Empresa>().ToArray());
             listBoxPessoas.Items.AddRange(Contato.GetTodosContatos<Pessoa>().ToArray());
         }
+
+        private void listBoxPessoas_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if(listBoxPessoas.SelectedIndex != -1)
+            {
+                FormEditAdd formEditAdd = new FormEditAdd((Pessoa)listBoxPessoas.SelectedItem, FormEditAdd.AcaoFormulario.Editar);
+                formEditAdd.ShowDialog();
+            }
+        }
+
+        private void listBoxEmpresas_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (listBoxEmpresas.SelectedIndex != -1)
+            {
+                FormEditAdd formEditAdd = new FormEditAdd((Empresa)listBoxEmpresas.SelectedItem, FormEditAdd.AcaoFormulario.Editar);
+                formEditAdd.ShowDialog();
+            }
+        }
     }
 }

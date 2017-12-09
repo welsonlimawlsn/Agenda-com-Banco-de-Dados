@@ -23,6 +23,14 @@ namespace AgendaBancoDados.Formularios
             InitializeComponent();
             this.Contato = contato;
             this.Acao = acaoFormulario;
+            if(acaoFormulario == AcaoFormulario.Editar)
+            {
+                textBoxNome.Text = ((Contato)contato).Nome;
+                textBoxTelefone.Text = ((Contato)contato).Telefone;
+                textBoxWhatsapp.Text = ((Contato)contato).Whatsapp;
+                textBoxEmail.Text = ((Contato)contato).Email;
+                textBoxEndereco.Text = ((Contato)contato).Endereco;
+            }
         }
 
         private void buttonSalvar_Click(object sender, EventArgs e)
@@ -35,8 +43,11 @@ namespace AgendaBancoDados.Formularios
             if (Acao == AcaoFormulario.Salvar)
             {
                 Contato.SalvarNovo();
-                MessageBox.Show("Contato salvo com sucesso!", "Salvo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            } else if (Acao == AcaoFormulario.Editar)
+            {
+                Contato.SalvarEdicao();
             }
+            MessageBox.Show("Contato salvo com sucesso!", "Salvo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }
     }
