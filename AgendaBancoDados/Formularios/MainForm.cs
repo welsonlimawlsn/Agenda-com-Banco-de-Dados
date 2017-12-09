@@ -44,18 +44,20 @@ namespace AgendaBancoDados.Formularios
         {
             if(listBoxPessoas.SelectedIndex != -1)
             {
-                FormEditAdd formEditAdd = new FormEditAdd((Pessoa)listBoxPessoas.SelectedItem, FormEditAdd.AcaoFormulario.Editar);
+                FormEditAdd formEditAdd = new FormEditAdd((Pessoa)listBoxPessoas.SelectedItem, FormEditAdd.AcaoFormulario.Visualizar);
                 formEditAdd.ShowDialog();
             }
+            CarregarListas();
         }
 
         private void listBoxEmpresas_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             if (listBoxEmpresas.SelectedIndex != -1)
             {
-                FormEditAdd formEditAdd = new FormEditAdd((Empresa)listBoxEmpresas.SelectedItem, FormEditAdd.AcaoFormulario.Editar);
+                FormEditAdd formEditAdd = new FormEditAdd((Empresa)listBoxEmpresas.SelectedItem, FormEditAdd.AcaoFormulario.Visualizar);
                 formEditAdd.ShowDialog();
             }
+            CarregarListas();
         }
     }
 }

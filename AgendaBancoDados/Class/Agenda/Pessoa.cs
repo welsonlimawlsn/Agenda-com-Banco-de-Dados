@@ -10,13 +10,16 @@ namespace AgendaBancoDados.Class.Agenda
     {
         public void Excluir()
         {
-            throw new NotImplementedException();
+            using (SQL sql = new SQL())
+            {
+                sql.Command("DELETE FROM pessoa WHERE id_pessoa = @Id", "@Id", this.Id.ToString());
+            }
         }
         public void SalvarEdicao()
         {
             using (SQL sql = new SQL())
             {
-                sql.Command("UPDATE pessoa SET nome = @Nome, telefone = @Telefone, whatsapp = @Whatsapp, email = @Email, endereco = @Endereco WHERE id_empresa = @Id",
+                sql.Command("UPDATE pessoa SET nome = @Nome, telefone = @Telefone, whatsapp = @Whatsapp, email = @Email, endereco = @Endereco WHERE id_pessoa = @Id",
                         "@Nome", this.Nome,
                         "@Telefone", this.Telefone,
                         "@Whatsapp", this.Whatsapp,

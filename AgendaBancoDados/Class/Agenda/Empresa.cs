@@ -10,7 +10,10 @@ namespace AgendaBancoDados.Class.Agenda
     {
         public void Excluir()
         {
-            throw new NotImplementedException();
+            using(SQL sql = new SQL())
+            {
+                sql.Command("DELETE FROM empresa WHERE id_empresa = @Id", "@Id", this.Id.ToString());
+            }
         }
         public void SalvarEdicao()
         {

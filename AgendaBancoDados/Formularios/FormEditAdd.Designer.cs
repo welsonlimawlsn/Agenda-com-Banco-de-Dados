@@ -39,6 +39,8 @@
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.textBoxEndereco = new System.Windows.Forms.TextBox();
             this.buttonSalvar = new System.Windows.Forms.Button();
+            this.buttonExcluir = new System.Windows.Forms.Button();
+            this.buttonEditar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +64,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(137, 48);
+            this.label3.Location = new System.Drawing.Point(150, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 2;
@@ -90,7 +92,7 @@
             // 
             this.textBoxNome.Location = new System.Drawing.Point(12, 25);
             this.textBoxNome.Name = "textBoxNome";
-            this.textBoxNome.Size = new System.Drawing.Size(224, 20);
+            this.textBoxNome.Size = new System.Drawing.Size(237, 20);
             this.textBoxNome.TabIndex = 5;
             // 
             // textBoxTelefone
@@ -102,7 +104,7 @@
             // 
             // textBoxWhatsapp
             // 
-            this.textBoxWhatsapp.Location = new System.Drawing.Point(136, 64);
+            this.textBoxWhatsapp.Location = new System.Drawing.Point(149, 64);
             this.textBoxWhatsapp.Name = "textBoxWhatsapp";
             this.textBoxWhatsapp.Size = new System.Drawing.Size(100, 20);
             this.textBoxWhatsapp.TabIndex = 7;
@@ -111,19 +113,20 @@
             // 
             this.textBoxEmail.Location = new System.Drawing.Point(12, 103);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(224, 20);
+            this.textBoxEmail.Size = new System.Drawing.Size(237, 20);
             this.textBoxEmail.TabIndex = 8;
             // 
             // textBoxEndereco
             // 
             this.textBoxEndereco.Location = new System.Drawing.Point(12, 142);
             this.textBoxEndereco.Name = "textBoxEndereco";
-            this.textBoxEndereco.Size = new System.Drawing.Size(224, 20);
+            this.textBoxEndereco.Size = new System.Drawing.Size(237, 20);
             this.textBoxEndereco.TabIndex = 9;
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(160, 169);
+            this.buttonSalvar.AutoSize = true;
+            this.buttonSalvar.Location = new System.Drawing.Point(174, 169);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
             this.buttonSalvar.TabIndex = 10;
@@ -131,11 +134,37 @@
             this.buttonSalvar.UseVisualStyleBackColor = true;
             this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
+            // buttonExcluir
+            // 
+            this.buttonExcluir.AutoSize = true;
+            this.buttonExcluir.Enabled = false;
+            this.buttonExcluir.Location = new System.Drawing.Point(12, 169);
+            this.buttonExcluir.Name = "buttonExcluir";
+            this.buttonExcluir.Size = new System.Drawing.Size(75, 23);
+            this.buttonExcluir.TabIndex = 11;
+            this.buttonExcluir.Text = "Excluir";
+            this.buttonExcluir.UseVisualStyleBackColor = true;
+            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
+            // 
+            // buttonEditar
+            // 
+            this.buttonEditar.AutoSize = true;
+            this.buttonEditar.Enabled = false;
+            this.buttonEditar.Location = new System.Drawing.Point(93, 169);
+            this.buttonEditar.Name = "buttonEditar";
+            this.buttonEditar.Size = new System.Drawing.Size(75, 23);
+            this.buttonEditar.TabIndex = 12;
+            this.buttonEditar.Text = "Editar";
+            this.buttonEditar.UseVisualStyleBackColor = true;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
+            // 
             // FormEditAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(248, 204);
+            this.ClientSize = new System.Drawing.Size(260, 204);
+            this.Controls.Add(this.buttonEditar);
+            this.Controls.Add(this.buttonExcluir);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.textBoxEndereco);
             this.Controls.Add(this.textBoxEmail);
@@ -167,5 +196,7 @@
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.TextBox textBoxEndereco;
         private System.Windows.Forms.Button buttonSalvar;
+        private System.Windows.Forms.Button buttonExcluir;
+        private System.Windows.Forms.Button buttonEditar;
     }
 }

@@ -16,7 +16,7 @@ namespace AgendaBancoDados.Formularios
         AcaoFormulario Acao { get; set; }
         public enum AcaoFormulario
         {
-            Salvar, Editar
+            Salvar, Editar, Visualizar
         }
         public FormEditAdd(ISalvavel contato, AcaoFormulario acaoFormulario)
         {
@@ -25,6 +25,16 @@ namespace AgendaBancoDados.Formularios
             this.Acao = acaoFormulario;
             if(acaoFormulario == AcaoFormulario.Editar)
             {
+                buttonExcluir.Enabled = true;
+            } else if (acaoFormulario == AcaoFormulario.Visualizar)
+            {
+                textBoxNome.ReadOnly = true;
+                textBoxTelefone.ReadOnly = true;
+                textBoxWhatsapp.ReadOnly = true;
+                textBoxEmail.ReadOnly = true;
+                textBoxEndereco.ReadOnly = true;
+                buttonEditar.Enabled = true;
+                buttonSalvar.Enabled = false;
                 textBoxNome.Text = ((Contato)contato).Nome;
                 textBoxTelefone.Text = ((Contato)contato).Telefone;
                 textBoxWhatsapp.Text = ((Contato)contato).Whatsapp;
@@ -49,6 +59,26 @@ namespace AgendaBancoDados.Formularios
             }
             MessageBox.Show("Contato salvo com sucesso!", "Salvo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
+        }
+
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            Contato.Excluir();
+            MessageBox.Show("Contato excluido com sucesso!", "Excluido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
+        }
+
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            Acao = AcaoFormulario.Editar;
+            textBoxNome.ReadOnly = false;
+            textBoxTelefone.ReadOnly = false;
+            textBoxWhatsapp.ReadOnly = false;
+            textBoxEmail.ReadOnly = false;
+            textBoxEndereco.ReadOnly = false;
+            buttonEditar.Enabled = false;
+            buttonSalvar.Enabled = true;
+            buttonExcluir.Enabled = true;
         }
     }
 }
