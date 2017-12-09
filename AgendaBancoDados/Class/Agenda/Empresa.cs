@@ -13,7 +13,6 @@ namespace AgendaBancoDados.Class.Agenda
         {
             throw new NotImplementedException();
         }
-
         public void SalvarEdicao()
         {
             throw new NotImplementedException();

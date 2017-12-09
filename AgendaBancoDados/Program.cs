@@ -5,6 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Data;
 using AgendaBancoDados.Formularios;
+using AgendaBancoDados.Class.Agenda;
 
 namespace AgendaBancoDados
 {
@@ -19,6 +20,7 @@ namespace AgendaBancoDados
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
+            
         }
     }
 }
