@@ -61,14 +61,14 @@
             // pessoalToolStripMenuItem
             // 
             this.pessoalToolStripMenuItem.Name = "pessoalToolStripMenuItem";
-            this.pessoalToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pessoalToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.pessoalToolStripMenuItem.Text = "Pessoal";
             this.pessoalToolStripMenuItem.Click += new System.EventHandler(this.pessoalToolStripMenuItem_Click);
             // 
             // comercialToolStripMenuItem
             // 
             this.comercialToolStripMenuItem.Name = "comercialToolStripMenuItem";
-            this.comercialToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.comercialToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.comercialToolStripMenuItem.Text = "Comercial";
             this.comercialToolStripMenuItem.Click += new System.EventHandler(this.comercialToolStripMenuItem_Click);
             // 
@@ -118,9 +118,12 @@
             this.Controls.Add(this.listBoxPessoas);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Agenda";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
