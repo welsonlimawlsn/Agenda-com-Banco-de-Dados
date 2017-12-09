@@ -6,3 +6,5 @@ C:\Users\welso\source\repos\AgendaBancoDados\AgendaBancoDados\obj\Debug\AgendaBa
 C:\Users\welso\source\repos\AgendaBancoDados\AgendaBancoDados\obj\Debug\AgendaBancoDados.csproj.CoreCompileInputs.cache
 C:\Users\welso\source\repos\AgendaBancoDados\AgendaBancoDados\obj\Debug\AgendaBancoDados.exe
 C:\Users\welso\source\repos\AgendaBancoDados\AgendaBancoDados\obj\Debug\AgendaBancoDados.pdb
+C:\Users\welso\source\repos\AgendaBancoDados\AgendaBancoDados\obj\Debug\AgendaBancoDados.Formularios.FormEditAdd.resources
+C:\Users\welso\source\repos\AgendaBancoDados\AgendaBancoDados\obj\Debug\AgendaBancoDados.Formularios.MainForm.resources

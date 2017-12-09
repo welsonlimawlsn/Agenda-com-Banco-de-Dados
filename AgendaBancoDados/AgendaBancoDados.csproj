@@ -42,9 +42,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Agenda\Contato.cs" />
+    <Compile Include="Class\Agenda\Empresa.cs" />
+    <Compile Include="Class\Agenda\ISalvavel.cs" />
+    <Compile Include="Class\Agenda\Pessoa.cs" />
     <Compile Include="Class\Util\SQL.cs" />
+    <Compile Include="Formularios\FormEditAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormEditAdd.Designer.cs">
+      <DependentUpon>FormEditAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\FormEditAdd.resx">
+      <DependentUpon>FormEditAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
