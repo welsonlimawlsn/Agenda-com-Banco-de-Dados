@@ -57,6 +57,5 @@ namespace AgendaBancoDados.Class.Util
             if(this.Connection != null)
                 this.Connection.Close();
         }
-
     }
 }
