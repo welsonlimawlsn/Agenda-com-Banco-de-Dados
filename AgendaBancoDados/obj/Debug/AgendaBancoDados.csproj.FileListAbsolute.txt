@@ -1,0 +1,8 @@
+C:\Users\welso\source\repos\AgendaBancoDados\AgendaBancoDados\bin\Debug\AgendaBancoDados.exe
+C:\Users\welso\source\repos\AgendaBancoDados\AgendaBancoDados\bin\Debug\AgendaBancoDados.pdb
+C:\Users\welso\source\repos\AgendaBancoDados\AgendaBancoDados\obj\Debug\AgendaBancoDados.csprojResolveAssemblyReference.cache
+C:\Users\welso\source\repos\AgendaBancoDados\AgendaBancoDados\obj\Debug\AgendaBancoDados.Properties.Resources.resources
+C:\Users\welso\source\repos\AgendaBancoDados\AgendaBancoDados\obj\Debug\AgendaBancoDados.csproj.GenerateResource.Cache
+C:\Users\welso\source\repos\AgendaBancoDados\AgendaBancoDados\obj\Debug\AgendaBancoDados.csproj.CoreCompileInputs.cache
+C:\Users\welso\source\repos\AgendaBancoDados\AgendaBancoDados\obj\Debug\AgendaBancoDados.exe
+C:\Users\welso\source\repos\AgendaBancoDados\AgendaBancoDados\obj\Debug\AgendaBancoDados.pdb
